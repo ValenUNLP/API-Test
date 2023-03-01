@@ -34,5 +34,79 @@
       }
     ],
     "status": "Cypress"
+  },
+  "JsStatusPets":[
+    {
+      "id": 1,
+      "category": {
+        "id": 0,
+        "name": "string"
+      },
+      "name": "ValenUNLP",
+      "photoUrls": [
+        "string"
+      ],
+      "tags": [
+        {
+          "id": 0,
+          "name": "string"
+        }
+      ],
+      "status": "Js"
+    },
+    {
+      "id": 2,
+      "category": {
+        "id": 0,
+        "name": "string"
+      },
+      "name": "ValenUNLP",
+      "photoUrls": [
+        "string"
+      ],
+      "tags": [
+        {
+          "id": 0,
+          "name": "string"
+        }
+      ],
+      "status": "Js"
+    },
+    {
+      "id": 3,
+      "category": {
+        "id": 0,
+        "name": "string"
+      },
+      "name": "ValenUNLP",
+      "photoUrls": [
+        "string"
+      ],
+      "tags": [
+        {
+          "id": 0,
+          "name": "string"
+        }
+      ],
+      "status": "Js"
+    }
+  ],
+  "fakePetStatus":{
+    "id": 4,
+    "category": {
+      "id": 0,
+      "name": "string"
+    },
+    "name": "ValenUNLP",
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "Java"
   }
 }
