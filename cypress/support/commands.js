@@ -23,3 +23,25 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+const Url = "https://petstore.swagger.io/v2"
+
+
+Cypress.Commands.add("AddPet", (Mascot)=>{
+    cy.request("POST",`${Url}/pet`, Mascot)
+})
+
+Cypress.Commands.add("UpdatePet", (Mascot)=>{
+    cy.request("PUT",`${Url}/pet`,Mascot)
+})
+
+Cypress.Commands.add("GetPetForStatus", (status)=>{
+    return cy.request("GET",`${Url}/pet/findByStatus?status=${status}`)
+})
+
+Cypress.Commands.add("GetPetForId" , (idMascot)=> {
+    return cy.request("GET", `${Url}/pet/${idMascot}`)
+})
+
+Cypress.Commands.add("DeletePet" , (idMascot)=> {
+    cy.request("DELETE", `${Url}/pet/${idMascot}`)
+})
