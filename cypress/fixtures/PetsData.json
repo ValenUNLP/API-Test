@@ -16,5 +16,23 @@
       }
     ],
     "status": "available"
+  },
+  "petStatus": {
+    "id": 10,
+    "category": {
+      "id": 0,
+      "name": "string"
+    },
+    "name": "ValenUNLP",
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "Cypress"
   }
 }
