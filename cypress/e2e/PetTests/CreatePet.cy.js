@@ -1,6 +1,6 @@
 
 describe("CreatePet",()=>{
-    const pet = require("../fixtures/PetsData.json").pet
+    const pet = require("../../fixtures/PetsData.json").pet
 
       it("Deberia crear una mascota",()=>{
           cy.AddPet(pet)

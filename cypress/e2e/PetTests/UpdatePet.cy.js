@@ -1,7 +1,7 @@
 describe("UpdatePet",()=>{
 
-    const pet = require("../fixtures/PetsData.json").pet
-    const newPet = require("../fixtures/PetsData.json").petStatus
+    const pet = require("../../fixtures/PetsData.json").pet
+    const newPet = require("../../fixtures/PetsData.json").petStatus
     //el status de pet y de newpet son diferentes
     before(()=>{
         cy.AddPet(pet)

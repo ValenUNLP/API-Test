@@ -39,7 +39,10 @@ Cypress.Commands.add("GetPetForStatus", (status)=>{
 })
 
 Cypress.Commands.add("GetPetForId" , (idMascot)=> {
-    return cy.request("GET", `${Url}/pet/${idMascot}`)
+    return cy.request({
+        url:`${Url}/pet/${idMascot}`,
+        failOnStatusCode: false
+    })
 })
 
 Cypress.Commands.add("DeletePet" , (idMascot)=> {

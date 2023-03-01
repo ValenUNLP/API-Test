@@ -1,7 +1,7 @@
 describe("GetForStatus",()=>{
 
-    const Pets = require("../fixtures/PetsData.json").JsStatusPets
-    const fakePet = require("../fixtures/PetsData.json").fakePetStatus
+    const Pets = require("../../fixtures/PetsData.json").JsStatusPets
+    const fakePet = require("../../fixtures/PetsData.json").fakePetStatus
     const lengthPets = Pets.length
 
     before(()=>{
