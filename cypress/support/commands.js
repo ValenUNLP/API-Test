@@ -48,3 +48,26 @@ Cypress.Commands.add("GetPetForId" , (idMascot)=> {
 Cypress.Commands.add("DeletePet" , (idMascot)=> {
     cy.request("DELETE", `${Url}/pet/${idMascot}`)
 })
+
+////////////////////////////////https://petstore.swagger.io/v2/store/order
+
+
+Cypress.Commands.add("AddOrder", (order)=>{
+    cy.request("POST", `${Url}/store/order`, order)
+})
+
+Cypress.Commands.add("GetOrderForId", (orderId)=>{
+    return cy.request({
+        url: `${Url}/store/order/${orderId}`,
+        failOnStatusCode:false
+    })
+})
+
+Cypress.Commands.add("DeleteOrder", (orderId)=>{
+    cy.request("DELETE", `${Url}/store/order/${orderId}`,)
+})
+
+Cypress.Commands.add("GetInventory", ()=>{
+    return cy.request("GET", `${Url}/store/inventory`)
+})
+
