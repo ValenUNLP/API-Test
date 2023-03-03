@@ -71,3 +71,34 @@ Cypress.Commands.add("GetInventory", ()=>{
     return cy.request("GET", `${Url}/store/inventory`)
 })
 
+/////////////////////////////////////
+Cypress.Commands.add("AddUser", (user)=>{
+    cy.request("POST", `${Url}/user`, user)
+})
+
+Cypress.Commands.add("GetUserForName", (userName)=>{
+    return cy.request({
+        url:`${Url}/user/${userName}`,
+        failOnStatusCode: false
+    })
+})
+
+Cypress.Commands.add("ChangeUser", (oldUserName, newUser)=>{
+    cy.request("PUT", `${Url}/user/${oldUserName}`, newUser)
+})
+
+Cypress.Commands.add("DeleteUser", (userName)=>{
+    cy.request("DELETE", `${Url}/user/${userName}`)
+})
+
+Cypress.Commands.add("AddUserList", (Users)=>{
+    cy.request("POST", `${Url}/user/createWithArray`, Users)
+})
+
+Cypress.Commands.add("UserLogin", (userName, password)=>{
+    return cy.request("GET", `${Url}/user/login?username=${userName}&password=${password}`)
+})
+
+Cypress.Commands.add("UserLogout", ()=>{
+    return cy.request("GET", `${Url}/user/logout`)
+})
