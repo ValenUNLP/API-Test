@@ -1,0 +1,54 @@
+{
+    "user":{
+        "id": 1,
+        "username": "Valen1",
+        "firstName": "string",
+        "lastName": "string",
+        "email": "string",
+        "password": "Banegas",
+        "phone": "string",
+        "userStatus": 0
+      },
+      "otherUser":{
+        "id": 2,
+        "username": "Valen2",
+        "firstName": "string",
+        "lastName": "string",
+        "email": "string",
+        "password": "Banegas",
+        "phone": "string",
+        "userStatus": 0
+      },
+    "userList":[
+        {
+            "id": 3,
+            "username": "Valen3",
+            "firstName": "string",
+            "lastName": "string",
+            "email": "string",
+            "password": "Banegas",
+            "phone": "string",
+            "userStatus": 0
+          },
+          {
+            "id": 4,
+            "username": "Valen4",
+            "firstName": "string",
+            "lastName": "string",
+            "email": "string",
+            "password": "Banegas",
+            "phone": "string",
+            "userStatus": 0
+          },
+          {
+            "id": 5,
+            "username": "Valen5",
+            "firstName": "string",
+            "lastName": "string",
+            "email": "string",
+            "password": "Banegas",
+            "phone": "string",
+            "userStatus": 0
+          }
+    ]
+}
